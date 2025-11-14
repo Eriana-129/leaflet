@@ -1937,7 +1937,8 @@ addPolygons <- function(
     popupOptions,
     safeLabel(label, data),
     labelOptions,
-    highlightOptions
+    highlightOptions,
+    getCrosstalkOptions(data)
   ) %>%
     expandLimitsBbox(pgons)
 }
